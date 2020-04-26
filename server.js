@@ -3,7 +3,7 @@ const express = require('express');
 var cors = require('cors');
 
 const port = process.env.PORT || 8080;
-process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
+// process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 const app = express();
 app.use(cors());
@@ -19,7 +19,7 @@ app.use(express.json());
 
 const client = new Client({
   connectionString: process.env.DATABASE_URL,
-  ssl: true,
+  ssl: { rejectUnauthorized: false },
 });
 
 if (process.env.NODE_ENV === 'production') {
