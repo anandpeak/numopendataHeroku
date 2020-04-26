@@ -62,7 +62,7 @@ class Department extends React.Component {
       jsonReq.id = this.props.location.state.depId;
 
       try {
-        await fetch('https://numopendata.herokuapp.com/struct/departments', {
+        await fetch('http://localhost:8080/struct/departments', {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify(jsonReq),
