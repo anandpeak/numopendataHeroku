@@ -1,0 +1,13 @@
+.inside {
+  font-size: 25px;
+  font-weight: bold;
+  fill: white;
+}
+.label {
+  font-size: 25px;
+  font-weight: bold;
+  fill: white;
+}
+.degreeChartTitle {
+  text-decoration: underline;
+}

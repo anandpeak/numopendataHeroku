@@ -1,0 +1,25 @@
+.structList {
+  background-color: #eeeeee;
+  padding: 15px;
+  width: 400px;
+  height: 150px;
+  margin: 15px;
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.mainContext {
+  text-align: center;
+  color: black;
+  font-family: 'Roboto';
+  position: relative;
+}
+
+.more {
+  bottom: 1px;
+  margin-left: 240px;
+  position: absolute;
+  font-family: 'Roboto';
+  font-size: 1.2rem;
+}

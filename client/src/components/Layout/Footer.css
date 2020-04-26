@@ -1,0 +1,13 @@
+.contact {
+  font-size: 14px;
+  color: #fff;
+  text-align: center;
+  font-weight: bold;
+}
+
+.contactText {
+  padding-left: 1rem;
+  color: #fff;
+  font-family: 'Lato', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+  font-size: 14px;
+}

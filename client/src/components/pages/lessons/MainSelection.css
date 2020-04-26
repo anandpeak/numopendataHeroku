@@ -1,0 +1,54 @@
+.list-group {
+  width: 600px;
+  float: left;
+  padding-left: 20px;
+}
+
+.gBarChart {
+  padding-left: 630px;
+}
+.container-fluid {
+  height: 100%;
+}
+.statDiv {
+  padding-left: 630px;
+}
+
+.MuiTreeItem-root.treeItem {
+  padding-top: 10px;
+}
+
+.MuiTreeItem-content {
+  background-color: #eeeeee;
+  border-radius: 25px;
+  height: 30px;
+}
+.MuiTypography-root.MuiTreeItem-label.MuiTypography-body1 {
+  padding-left: 10px;
+}
+.MuiTreeItem-iconContainer {
+  background-color: aliceblue;
+  border-radius: 45px;
+  height: 25px;
+}
+.MuiSvgIcon-root path {
+  background-color: #007bff;
+  padding-top: 10px;
+}
+.renderSeason {
+  text-align: center;
+}
+
+.renderSeason label {
+  font-size: 1.3rem;
+  margin-left: 5px;
+}
+
+.containerInput {
+  display: inline;
+  padding-left: 70px;
+}
+.inpRad {
+  margin: 0px;
+  padding-bottom: 10px;
+}

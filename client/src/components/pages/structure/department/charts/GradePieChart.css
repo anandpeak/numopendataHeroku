@@ -1,0 +1,12 @@
+.rect {
+  fill: steelblue;
+}
+.gradeChartContainer {
+  padding-top: 75px;
+}
+.titleOfGrade {
+  text-decoration: underline;
+}
+.totalGradeTitle {
+  text-decoration: underline;
+}

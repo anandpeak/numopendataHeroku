@@ -1,0 +1,28 @@
+.navbar.navbar-expand-lg.navbar-light img {
+  width: 165px;
+  margin-left: 150px;
+}
+.navbar-nav.mr-auto {
+  margin-left: 150px;
+  padding: 16px;
+  text-align: center;
+  position: relative;
+}
+
+.navbar-nav.mr-auto li {
+  display: inline-block;
+  font-size: 1.5rem;
+  color: #fff;
+  margin-left: 2rem;
+  cursor: pointer;
+  font-family: serif;
+}
+
+.navbar-nav.mr-auto li:hover {
+  background-color: #0e369c;
+  border-radius: 15px;
+}
+
+.navbar-nav.mr-auto li p {
+  color: white;
+}
