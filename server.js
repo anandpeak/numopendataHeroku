@@ -118,7 +118,7 @@ app.post('/api/seasData', async (req, res) => {
 app.listen(port, () => console.log('web server listeninig'));
 
 start();
-console.log('sda');
+
 async function start() {
   await connect();
 }
