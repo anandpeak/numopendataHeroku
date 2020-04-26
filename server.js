@@ -8,12 +8,17 @@ const app = express();
 app.use(cors());
 app.use(express.json());
 
+// const client = new Client({
+//   user: 'postgres',
+//   password: 'Eff123456',
+//   host: 'localhost',
+//   port: 5432,
+//   database: 'numdata',
+// });
+
 const client = new Client({
-  user: 'postgres',
-  password: 'Eff123456',
-  host: 'localhost',
-  port: 5432,
-  database: 'numdata',
+  connectionString: process.env.DATABASE_URL,
+  ssl: true,
 });
 
 if (process.env.NODE_ENV === 'production') {
