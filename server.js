@@ -3,6 +3,7 @@ const express = require('express');
 var cors = require('cors');
 
 const port = process.env.PORT || 8080;
+process.env['NODE_TLS_REJECT_UNAUTHORIZED'] = 0;
 
 const app = express();
 app.use(cors());
