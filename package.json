@@ -9,7 +9,7 @@
     "build": "cd client && npm run start",
     "dev": "concurrently --kill-others-on-fail \"npm run server\" \"npm run client\"",
     "start": "node server.js",
-    "heroku-postbuild": "cd client && yarn install && yarn start && yarn start"
+    "heroku-postbuild": "yarn start && cd client && yarn install && yarn start "
   },
   "engines": {
     "node": "12.16.0"
