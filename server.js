@@ -75,6 +75,7 @@ app.post('/lessonName', async (req, res) => {
 });
 
 app.get('/struct/departments/:id', async (req, res) => {
+  console.log('req = ', req);
   var id = req.params.id;
   let rows = {};
   try {
