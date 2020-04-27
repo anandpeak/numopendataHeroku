@@ -29,7 +29,7 @@ class Department extends React.Component {
       await this.setState({ isSeas: true });
 
       try {
-        await fetch('http://localhost:8080/api/seasData', {
+        await fetch('https://numopendata.herokuapp.com/api/seasData', {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
         })
@@ -99,7 +99,9 @@ class Department extends React.Component {
     }
 
     try {
-      await fetch(`http://localhost:8080/struct/departments/${depId}`)
+      await fetch(
+        `https://numopendata.herokuapp.com/struct/departments/${depId}`
+      )
         .then((data) => data.json())
         .then((data) =>
           this.setState({

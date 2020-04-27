@@ -47,7 +47,7 @@ class MainSelection extends React.Component {
     jsonReq.season = this.state.season;
 
     try {
-      await fetch('http://localhost:8080/lesson', {
+      await fetch('https://numopendata.herokuapp.com/lesson', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(jsonReq),
@@ -61,7 +61,7 @@ class MainSelection extends React.Component {
           });
         });
 
-      await fetch('http://localhost:8080/lessonsAverageStats', {
+      await fetch('https://numopendata.herokuapp.com/lessonsAverageStats', {
         method: 'POST',
         headers: { 'content-type': 'application/json' },
         body: JSON.stringify(jsonReq),
@@ -108,7 +108,7 @@ class MainSelection extends React.Component {
       jsonReq.season = this.state.season;
 
       try {
-        await fetch('http://localhost:8080/lessonName', {
+        await fetch('https://numopendata.herokuapp.com/lessonName', {
           method: 'POST',
           headers: { 'content-type': 'application/json' },
           body: JSON.stringify(jsonReq),
