@@ -103,6 +103,9 @@ class Department extends React.Component {
         `https://numopendata.herokuapp.com/struct/departments/${depId}`
       )
         .then((data) => data.json())
+        .then((data) => {
+          console.log('arar', data);
+        })
         .then((data) =>
           this.setState({
             mainName: data.depName,
@@ -110,8 +113,6 @@ class Department extends React.Component {
             numberOfEmp: data.numberOfEmp,
             numberOfGrade: data.numberOfGrade,
             totalGrade: data.totalGrade,
-          }).then((data) => {
-            console.log('arar', data);
           })
         );
     } catch (err) {
