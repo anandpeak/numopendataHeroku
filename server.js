@@ -25,12 +25,13 @@ const client = new Client({
 if (process.env.NODE_ENV === 'production') {
   // Exprees will serve up production assets
   app.use(express.static('client/build'));
+  console.log('pdididididiidididi');
 
   // Express serve up index.html file if it doesn't recognize route
-  const path = require('path');
-  app.get('*', (req, res) => {
-    res.sendFile(__dirname + 'client/build/index.html');
-  });
+  // const path = require('path');
+  // app.get('*', (req, res) => {
+  //   res.sendFile(__dirname + 'client/build/index.html');
+  // });
 }
 
 app.post('/struct/departments', async (req, res) => {
