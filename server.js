@@ -37,8 +37,7 @@ app.post('/struct/departments', async (req, res) => {
   let rows = [];
   try {
     const reqJson = req.body;
-    // rows = await getStruct(reqJson.id);
-    rows = ['s', 'd'];
+    rows = await getStruct(reqJson.id);
   } catch (e) {
     console.log(e);
   } finally {

@@ -71,7 +71,6 @@ class Department extends React.Component {
             return res.json();
           })
           .then((departs) => {
-            console.log('depart = ', departs);
             this.setState({
               departs: departs.results,
               initDep: departs.results[0].department_id,
